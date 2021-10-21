@@ -1,0 +1,41 @@
+.form {
+  &__container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__input {
+    width: 70%;
+    height: 80px;
+    padding: 10px;
+    max-width: 100%;
+    line-height: 1.5;
+    border-radius: 5px;
+    font-size:1rem;
+    font-family: "Rufina", serif;
+      &::placeholder{
+        text-align: center;
+        font-size:1.2rem;
+        }
+  }
+  &__button {
+    width: 25%;
+    height: 45px;
+    background: #2dbf68;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    &:hover{
+      opacity: 0.8;
+      }
+  }
+}
+@media screen and (max-width:780px){
+.form{
+  &__button{
+    width: 20%;
+    }
+  }
+}
